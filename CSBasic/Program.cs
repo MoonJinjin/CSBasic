@@ -108,6 +108,103 @@ namespace CSBasic
             Console.WriteLine(3 < i && i < 8);
             Console.WriteLine(3 > i || i > 8);
             Console.WriteLine(i < 2 || 8 < i);
+
+            int a = 21468410;
+            int b = 10000000;
+            Console.WriteLine((long)a + b);
+
+            Console.WriteLine(int.MinValue);
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(double.MaxValue);
+
+            Console.WriteLine( - int.MaxValue);
+            // Console.WriteLine( - int.MinValue);
+
+            Console.WriteLine(3L);
+            Console.WriteLine(3l);
+
+            Console.WriteLine(3);
+            Console.WriteLine(3.0);
+            char c = 'a';
+            Console.WriteLine(c);
+
+            // sizeof(자료형)
+            Console.WriteLine("int : " + sizeof(int));
+            Console.WriteLine("long : " + sizeof(long));
+            Console.WriteLine("float : " + sizeof(float));
+            Console.WriteLine("double : " + sizeof(double));
+            Console.WriteLine("char : " + sizeof(char));
+
+            bool IsLive = true;
+
+            var a1 = (int)10.0;
+            var b1 = (float)10;
+            var c1 = (double)10;
+
+            long longNumber = 2147483637L + 2100000000L;
+            int intNumber = (int)longNumber;
+            Console.WriteLine(intNumber);
+
+            long longNumber2 = 52773;
+            int intNumber2 = (int)longNumber2;
+            Console.WriteLine(intNumber2);
+
+            Console.WriteLine("int, long, float, double MaxValue");
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(long.MaxValue);
+            Console.WriteLine(float.MaxValue);
+            Console.WriteLine(double.MaxValue);
+
+            Console.WriteLine("문자열 숫자로 변환");
+            Console.WriteLine(int.Parse("52"));
+            Console.WriteLine(long.Parse("412"));
+            Console.WriteLine(float.Parse("52.273"));
+            Console.WriteLine(double.Parse("22.32"));
+            Console.WriteLine(int.Parse("52").GetType());
+            Console.WriteLine(long.Parse("412").GetType());
+            Console.WriteLine(float.Parse("52.273").GetType());
+            Console.WriteLine(double.Parse("22.32").GetType());
+
+            Console.WriteLine(int.Parse("52.273"));
+            Console.WriteLine(int.Parse("abc"));
+            Console.WriteLine(int.Parse("육십삼"));
+            Console.WriteLine(int.Parse("Seven"));
+
+            (10).ToString();
+            (52.292).ToString();
+
+            double numberToString = 52.1985;
+            Console.WriteLine(numberToString.ToString("0.0"));
+            Console.WriteLine(numberToString.ToString("0.00"));
+            Console.WriteLine(numberToString.ToString("0.000"));
+            Console.WriteLine(numberToString.ToString("0.0000"));
+
+            // 숫자와 문자열 덧셈
+            Console.WriteLine(52 + 273);
+            Console.WriteLine("52" + 273);
+            Console.WriteLine(52 + "273");
+            Console.WriteLine("52" + "273");
+            Console.WriteLine(52 + 2 + 273);
+            Console.WriteLine(52 + "2" + 273);
+            Console.WriteLine("52" + 2 + 273);
+            Console.WriteLine(52 + 2 + "273");
+
+            int number = 52273;
+            string outputA = number + "";
+
+            char character = 'a';
+            string outputB = character + "";
+            Console.WriteLine(outputB);
+
+            Console.WriteLine(bool.Parse("True"));
+            Console.WriteLine(bool.Parse("true"));
+            Console.WriteLine(bool.Parse("TRUE"));
+            Console.WriteLine(bool.Parse("truE"));
+            Console.WriteLine(bool.Parse("TrUe"));
+
+            int outputInt = int.MinValue;
+            Console.WriteLine(-(long)outputInt);
+            Console.WriteLine(-(-2147483618));
         }
     }
 }

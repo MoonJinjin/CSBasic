@@ -65,9 +65,9 @@ namespace CSBasic4
             list.Add(64);*/
             List<int> list = new List<int> { 52, 273, 32, 64 };
 
-            foreach(var item in list)
+            foreach (var item in list)
             {
-                Console.WriteLine("Count : " + list.Count + "\titem : " + item );
+                Console.WriteLine("Count : " + list.Count + "\titem : " + item);
                 list.Remove(item);
             }
 
@@ -87,9 +87,42 @@ namespace CSBasic4
 
             Product productA = new Product() { name = "짜장면", price = 5500 };
             Product productB = new Product() { name = "짬뽕", price = 8000 };
-            Product productC = new Product() { name = "탕수육"};
+            Product productC = new Product() { name = "탕수육" };
             Product productD = new Product() { price = 9999999 };
             Product productE = new Product() { price = 9000, name = "양장피" };
+
+            List<Student> students = new List<Student>()
+            {
+                new Student() { name = "윤인성", grade = 1 },
+                new Student() { name = "김이름", grade = 2 },
+                new Student() { name = "이아린", grade = 3 },
+                new Student() { name = "김명월", grade = 4 },
+                new Student() { name = "구지연", grade = 1 },
+                new Student() { name = "이연화", grade = 2 },
+            };
+
+            //foreach(var item in students)
+            /*for (int i = 0; i < students.Count; i++)
+            {
+                if(students[i].grade > 1)
+                {
+                    students.RemoveAt(i);
+                    i--;
+                    //students.Remove(item);
+                }
+            }*/
+            for (int i = students.Count - 1; i >= 0; i--)
+            {
+                if (students[i].grade > 1)
+                {
+                    students.RemoveAt(i);
+                }
+            }
+
+            foreach (var item in students)
+            {
+                Console.WriteLine(item.name + " : " + item.grade);
+            }
         }
     }
 }

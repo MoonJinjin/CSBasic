@@ -49,9 +49,11 @@ namespace Chapter6_FormPrac
         private void btnModalless_Click(object sender, EventArgs e)
         {
             Form form = new FormCustom();
+            IsMdiContainer = true;
 
             if (sender == btnModalless)
             {
+                form.MdiParent = this;
                 form.Show();
             } else if (sender == btnModal)
             {

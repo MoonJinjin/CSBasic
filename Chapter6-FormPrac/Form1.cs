@@ -45,5 +45,18 @@ namespace Chapter6_FormPrac
                     break;
             }
         }
+
+        private void btnModalless_Click(object sender, EventArgs e)
+        {
+            Form form = new FormCustom();
+
+            if (sender == btnModalless)
+            {
+                form.Show();
+            } else if (sender == btnModal)
+            {
+                form.ShowDialog();
+            }
+        }
     }
 }

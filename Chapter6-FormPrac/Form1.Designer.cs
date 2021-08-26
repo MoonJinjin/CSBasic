@@ -32,6 +32,8 @@ namespace Chapter6_FormPrac
             this.btnMessageBox1 = new System.Windows.Forms.Button();
             this.btnMessageBox2 = new System.Windows.Forms.Button();
             this.btnMessageBox3 = new System.Windows.Forms.Button();
+            this.btnModalless = new System.Windows.Forms.Button();
+            this.btnModal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox1
@@ -62,11 +64,32 @@ namespace Chapter6_FormPrac
             this.btnMessageBox3.Text = "메세지 박스";
             this.btnMessageBox3.UseVisualStyleBackColor = true;
             // 
+            // btnModalless
+            // 
+            this.btnModalless.Location = new System.Drawing.Point(481, 70);
+            this.btnModalless.Name = "btnModalless";
+            this.btnModalless.Size = new System.Drawing.Size(284, 158);
+            this.btnModalless.TabIndex = 3;
+            this.btnModalless.Text = "모달리스 창 열기";
+            this.btnModalless.UseVisualStyleBackColor = true;
+            this.btnModalless.Click += new System.EventHandler(this.btnModalless_Click);
+            // 
+            // btnModal
+            // 
+            this.btnModal.Location = new System.Drawing.Point(481, 254);
+            this.btnModal.Name = "btnModal";
+            this.btnModal.Size = new System.Drawing.Size(284, 161);
+            this.btnModal.TabIndex = 4;
+            this.btnModal.Text = "모달 창 열기";
+            this.btnModal.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 507);
+            this.Controls.Add(this.btnModal);
+            this.Controls.Add(this.btnModalless);
             this.Controls.Add(this.btnMessageBox3);
             this.Controls.Add(this.btnMessageBox2);
             this.Controls.Add(this.btnMessageBox1);
@@ -81,6 +104,8 @@ namespace Chapter6_FormPrac
         private System.Windows.Forms.Button btnMessageBox1;
         private System.Windows.Forms.Button btnMessageBox2;
         private System.Windows.Forms.Button btnMessageBox3;
+        private System.Windows.Forms.Button btnModalless;
+        private System.Windows.Forms.Button btnModal;
     }
 }
 
